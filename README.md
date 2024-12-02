@@ -8,3 +8,9 @@ This code was run on a Macbook Pro (Sequoia 15.1), in bash and R version 4.4.1.
 
 It was also run on bluecrystal4.
 
+The R environment is recorded in the AHDS_environment.yml file in this directory. To create this environment in Conda, use:
+
+```bash
+conda env create -f AHDS_environment.yml
+conda activate AHDS_env
+
