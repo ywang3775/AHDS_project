@@ -24,4 +24,26 @@ conda install r-base=4.4.1 r-tidyverse=2.0.0 r-janitor=2.2.0
 conda export --from-history > AHDS_environment.yml
 ```
 
+## **Running the pipeline**
+
+Execute the entire data processing pipeline using SnakeMake:
+
+```bash
+snakemake --cores 1
+```
+
+## **Scripts Descrition**
+
+step1.sh: Download articles data.
+step2.sh: Process articles data.
+step3.R: Process titles text.
+step4.R: Generate visualization for keyword trends.
+
+## **Generated Outputs**
+
+clean/processed_titles.tsv: Processed articles data (PMID, year, and title).
+clean/processed_tidy_titles.tsv: Processed articles data with tidy titles (PMID, year, and processed_title).
+clean/keyword_trends_plot.png: A line chart showing keyword trends over time.
+
+
 
