@@ -13,4 +13,15 @@ The R environment is recorded in the AHDS_environment.yml file in this directory
 ```bash
 conda env create -f AHDS_environment.yml
 conda activate AHDS_env
+```
+
+Note that this environment was initially created with:
+
+```bash
+conda create -n AHDS_env
+conda activate AHDS_env
+conda install r-base=4.4.1 r-tidyverse=2.0.0 r-janitor=2.2.0
+conda export --from-history > AHDS_environment.yml
+```
+
 
