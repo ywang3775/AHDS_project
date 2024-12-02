@@ -35,14 +35,19 @@ snakemake --cores 1
 ## **Scripts Descrition**
 
 step1.sh: Download articles data.
+
 step2.sh: Process articles data.
+
 step3.R: Process titles text.
+
 step4.R: Generate visualization for keyword trends.
 
 ## **Generated Outputs**
 
 clean/processed_titles.tsv: Processed articles data (PMID, year, and title).
+
 clean/processed_tidy_titles.tsv: Processed articles data with tidy titles (PMID, year, and processed_title).
+
 clean/keyword_trends_plot.png: A line chart showing keyword trends over time.
 
 
